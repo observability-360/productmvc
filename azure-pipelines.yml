@@ -29,7 +29,7 @@ steps:
 - script: |
     .\.sonarscanner\dotnet-sonarscanner begin \
       /o:"observability-360" \
-      /k:"observability-360_icebreaker" \
+      /k:"observability-360_productmvc" \
       /d:sonar.host.url="https://sonarcloud.io" \
       /d:sonar.token="$(SONAR_TOKEN)"
   displayName: 'SonarQube Begin Analysis'
