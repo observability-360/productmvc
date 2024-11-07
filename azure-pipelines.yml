@@ -22,7 +22,7 @@ steps:
     packageType: 'sdk'
     version: '8.0.x' # Replace with the .NET SDK version compatible with your project
 
-- script: dotnet tool install dotnet-sonarscanner --tool-path ./.sonarscanner
+- script: dotnet tool install dotnet-sonarscanner
   displayName: 'Install SonarScanner to Local Path'
 
 # Begin SonarQube analysis using local tool path
