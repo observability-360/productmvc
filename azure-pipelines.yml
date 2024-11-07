@@ -27,11 +27,7 @@ steps:
 
 # Begin SonarQube analysis using local tool path
 - script: |
-    .\.sonarscanner\dotnet-sonarscanner begin \
-      /o:"observability-360" \
-      /k:"observability-360_productmvc" \
-      /d:sonar.host.url="https://sonarcloud.io" \
-      /d:sonar.token="e9711f69cd2c0e4c30c36b935127ce0d4ab668b3"
+    .\.sonarscanner\dotnet-sonarscanner begin /o:"observability-360" /k:"observability-360_productmvc" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.token="e9711f69cd2c0e4c30c36b935127ce0d4ab668b3"
   displayName: 'SonarQube Begin Analysis'
   env:
     SONAR_TOKEN: 'e9711f69cd2c0e4c30c36b935127ce0d4ab668b3'
