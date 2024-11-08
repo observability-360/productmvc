@@ -6,6 +6,9 @@ namespace ProductMVC.Services;
 
 public class ProductService
 {
+
+    string xz = "ghghhghh";
+
     private List<Product> products = new List<Product>()
         {
             new Product() { Id = 1, Name = "Keyboard", Price = 100 },
@@ -39,6 +42,24 @@ public class ProductService
     }
 
     public void Delete(int id)
+    {
+        var product = products.FirstOrDefault(p => p.Id == id);
+        if (product != null)
+        {
+            products.Remove(product);
+        }
+    }
+
+    public void Delete2(int id)
+    {
+        var product = products.FirstOrDefault(p => p.Id == id);
+        if (product != null)
+        {
+            products.Remove(product);
+        }
+    }
+
+    public void Delete3(int id)
     {
         var product = products.FirstOrDefault(p => p.Id == id);
         if (product != null)
