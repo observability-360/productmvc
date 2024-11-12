@@ -28,7 +28,7 @@ public class ProductService
 
     public void Add(Product product)
     {
-        products.Addx(product);
+        products.Add(product);
     }
 
     public void Update(int id, Product updatedProduct)
