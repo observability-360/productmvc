@@ -23,8 +23,6 @@ steps:
     version: '8.0.x' # Replace with the .NET SDK version compatible with your project
 
 
--
-
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
